@@ -1,16 +1,16 @@
 # Phyton-projekt-feladat
-======================================================
+============================================
 Videó Képkocka Kinyerő v0.1.0
-======================================================
+============================================
 
 LEÍRÁS
 A program egy megadott videófájlból (pl. mp4) adott időközönként képkockákat 
 ment ki egy mappába a megadott formátumban. A kimentett képek felbontása a 
 felhasználó által testreszabható(a bemeneti videó felbontásánál csak kissebb méret adható meg).
 
-======================================================
+=============================================
 FUTTATÁSHOZ SZÜKSÉGES FELTÉTELEK
-======================================================
+=============================================
 
 1. Python telepítés: A program futtatásához Python 3.x környezet szükséges.
 2. OpenCV könyvtár: A videó- és képfeldolgozást a cv2 modul végzi, amelyet 
@@ -19,9 +19,9 @@ FUTTATÁSHOZ SZÜKSÉGES FELTÉTELEK
    Telepítése a parancssorban (Command Prompt / Terminal):
    pip install opencv-python
 
-======================================================
+============================================
 BEMENETI ADATOK ÉS PARAMÉTEREK BEÁLLÍTÁSA
-======================================================
+============================================
 
 Mivel a program nem parancssori argumentumokat használ, a futtatás előtt 
 a kód elején található "#==================== Input's_&_Outputs ====================" 
@@ -65,9 +65,9 @@ a "fajlnev" változón bellül lehet megadni.
   - FONTOS: a változóban megadott szövegnek alábbi módon kell végződnie: .{fajl_formatum} különben a program nem fut le. 
   - Példa a helyes elnevezésre: fajlnev = f"mentésinév.{fajl_formatum}"
 
-======================================================
+============================================
 FUTTATÁS
-======================================================
+============================================
 
 1. Nyisd meg a .py kiterjesztésű kódot egy kódszerkesztőben (pl. VS Code, Notepad++).
 2. Állítsd be a saját elérési útjaidat a `video_path` és `save_path` változóknál.
