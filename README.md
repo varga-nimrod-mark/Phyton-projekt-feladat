@@ -27,11 +27,11 @@ Mivel a program nem parancssori argumentumokat használ, a futtatás előtt
 a kód elején található "#==================== Input's_&_Outputs ====================" 
 szekcióban kell megadni a megfelelő adatokat a változóknál:
 
-* video_path
+* "video_path"
   - A feldolgozandó videófájl pontos elérési útja (pl. "C:\...\test_video.mp4").
   - Fontos, hogy a fájl valóban létezzen ezen a helyen, különben hibaüzenetet ad!
 
-* debug
+* "debug"
   - Értéke True vagy False lehet.
   - Ha False (alapértelmezett): A program elvégzi a képkockák kimentését a háttérben.
   - Ha True: A program bekapcsolja a hibakereső (debug) módot. Kiírja a videó 
@@ -39,21 +39,22 @@ szekcióban kell megadni a megfelelő adatokat a változóknál:
     ilyenkor NEM menti le a képeket, igy tesztelhető a program a cél mappa tele "szemetelése" nélkül.
     A lejátszás a 'q' billentyű megnyomásával megszakítható.
 
-* fsps (Frames Saved Per Second)
+* "fsps"
+  - (Frames Saved Per Second)
   - Egy egész szám, amely megadja, hogy egy másodpercnyi videóanyagból 
     hány darab képkockát mentsen le a program (pl. 2).
 
-* fajl_formatum_nyers
+* "fajl_formatum_nyers"
   - Az itt megadott formátumban kerülnek a képek lementésre, a kódsor az alábbi formátumokat támogatja:
     jpg, jpeg, jpe, png, webp, bmp, dib, tif, tiff, jp2, hdr, pic, sr, ras, ppm, pnm,
     amenyiben ezektől eltér a megadott formátum a program hibaüzenetet ad!
 
-* save_path
+* "save_path"
   - A mappa pontos elérési útja, ahová a program a képeket fogja menteni 
     (pl. "C:\...\farme's").
   - FONTOS: A mappának már léteznie kell a program indítása előtt, különben hibaüzenetet ad!
 
-* size
+* "size"
   - A kimentett képek felbontása (szélesség, magasság) formátumban, pl. [640, 640].
   - Csak két pozitív egész szám adható meg.
   - A megadott méret nem lehet nagyobb, mint az eredeti videó felbontása 
